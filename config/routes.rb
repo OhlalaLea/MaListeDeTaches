@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   # get 'index', to: 'tasks#index'
-  resources :tasks
+  resources :tasks do
+    collection do
+      get :not_done
+    end
+  end
 
 end

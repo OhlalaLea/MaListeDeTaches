@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+puts 'on efface les anciennes taches'
+Task.destroy_all
+
 puts 'creating tasks'
 Task.create(
   title: 'tache 1',

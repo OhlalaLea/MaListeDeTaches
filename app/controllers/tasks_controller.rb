@@ -29,6 +29,10 @@ class TasksController < ApplicationController
     redirect_to tasks_path, status: :see_other
   end
 
+  def not_done
+    @tasks = Task.where(completed: false)
+  end
+
   private
 
   def set_task

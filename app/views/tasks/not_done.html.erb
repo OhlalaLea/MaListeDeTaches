@@ -1,0 +1,9 @@
+<h1>taches non faites</h1>
+<div id="tasks">
+  <% @tasks.each do |task| %>
+    <%= render show %>
+    <p>
+      <%= link_to "Show this task", task %>
+    </p>
+  <% end %>
+</div>
