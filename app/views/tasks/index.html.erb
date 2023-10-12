@@ -1,1 +1,9 @@
 <h1>Index des taches view 🚀</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %>
+
+  <p><%= task.description %></p></li>
+  <% end %>
+</ul>
