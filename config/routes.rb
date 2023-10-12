@@ -6,5 +6,4 @@ Rails.application.routes.draw do
   # get 'index', to: 'tasks#index'
   resources :tasks
 
-
 end

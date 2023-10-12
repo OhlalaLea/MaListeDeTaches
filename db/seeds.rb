@@ -6,21 +6,26 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-
-puts 'creating 2 tasks'
-
-tache1 = Task.create(
+puts 'creating tasks'
+Task.create(
   title: 'tache 1',
   description: 'faire la tache 1',
   completed: false,
   due_date: "14/10/2023"
 )
 
-tache2 = Task.create(
+Task.create(
   title: 'tache 2',
   description: 'faire la tache 2',
   completed: false,
   due_date: "13/10/2023"
+)
+
+Task.create(
+  title: 'tache 3',
+  description: 'faire la tache 3',
+  completed: true,
+  due_date: "04/10/2023"
 )
 
 puts 'fini'

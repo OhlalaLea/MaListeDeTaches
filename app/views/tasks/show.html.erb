@@ -9,3 +9,7 @@
   task_path(@task),
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
 %>
+
+<%= link_to edit_task_path, data: {turbo_method: :get} do %>
+  <p>Edit <i class="fas fa-pencil-alt"></i></p>
+<% end %>
