@@ -45,7 +45,13 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
+gem "bootstrap", "~> 5.2"
+
+gem "font-awesome-sass", "~> 6.1"
+
 gem "simple_form", github: "heartcombo/simple_form"
+
+gem "autoprefixer-rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
