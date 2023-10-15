@@ -3,6 +3,8 @@ class TasksController < ApplicationController
 
   def index
     @tasks = Task.all
+    @incomplete_tasks = Task.where(completed: false)
+    @completed_tasks = Task.where(completed: true)
   end
 
   def show; end

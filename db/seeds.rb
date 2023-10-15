@@ -26,7 +26,7 @@ Task.create(
 
 Task.create(
   title: 'tache 3',
-  description: 'faire la tache 3',
+  description: 'faire la tache 3 faire la tache 3 faire la tache 3 faire la tache 3 faire la tache 3 faire la tache 3',
   completed: true,
   due_date: "04/10/2023"
 )
