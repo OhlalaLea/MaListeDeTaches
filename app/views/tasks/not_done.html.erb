@@ -1,4 +1,12 @@
-<h1>taches non faites</h1>
+<div class="section">
+  <%= link_to root_path, data: { turbo_method: :get } do %>
+    <i class="fa-solid fa-arrow-left fa-2xl" style="color: #000000;"></i>
+  <% end %>
+  <hr>
+  <h2>Not done</h2>
+</div>
+
+<div class="container">
 <div id="tasks">
   <% @tasks.each do |task| %>
     <%= render task %>
@@ -6,4 +14,5 @@
       <%= link_to "Show this task", task %>
     </p>
   <% end %>
+</div>
 </div>
